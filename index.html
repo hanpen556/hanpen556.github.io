@@ -20,28 +20,37 @@
 <body>
 <main>
   <h1>kirinuki-upload</h1>
-  <p class="sub">YouTube チャンネル「ホロアソビ観察日誌【ホロライブ切り抜き】」の運営者が使う、自分専用の投稿ツール</p>
+  <p class="sub">YouTube チャンネル「ホロアソビ観察日誌【ホロライブ切り抜き】」の運営者が使う、自分専用の投稿・管理ツール</p>
 
   <h2>このアプリについて</h2>
-  <p>kirinuki-upload は、YouTube チャンネル「ホロアソビ観察日誌【ホロライブ切り抜き】」の運営者が、<strong>自分で作った動画を自分のチャンネルにアップロードし、公開日時を予約する</strong>ためのツールです。</p>
+  <p>kirinuki-upload は、YouTube チャンネル「ホロアソビ観察日誌【ホロライブ切り抜き】」の運営者が、<strong>自分で編集した切り抜き動画を自分のチャンネルにアップロードし、公開日時を予約し、自分のチャンネルの成績を確かめる</strong>ためのツールです。切り抜きは、元の配信者が公開している二次創作・切り抜きのガイドラインに沿って作っています。</p>
   <ul>
     <li>使うのはチャンネルの運営者1人だけです。ほかの人が登録・ログインして使うサービスではありません。</li>
-    <li>YouTube Data API を使って、動画のアップロード（最初は非公開）、タイトル・説明文・サムネイルの設定、公開予約を行います。</li>
+    <li>YouTube API サービス（YouTube Data API・YouTube Analytics API）を使って、次のことを行います。
+      <ul>
+        <li>動画のアップロード（最初は非公開）、タイトル・説明文・タグ・サムネイルの設定、公開予約</li>
+        <li>自分のチャンネルの動画の再生数・視聴時間・クリック率などの数字の確認</li>
+        <li>自分の動画に付いたコメントのうち、字幕や名前のまちがいの指摘がないかの確認</li>
+        <li>月に1回、YouTube の検索で、切り抜いている配信者の切り抜き動画がどれくらい出ているかを数える（数だけを記録します）</li>
+      </ul>
+    </li>
     <li>公開する動画はすべて、運営者が公開前に内容を確認してから予約します。</li>
-    <li>ほかの人のチャンネルや動画、視聴者の情報を読み取ったり、変更したりはしません。</li>
+    <li>ほかの人のチャンネルや動画を変更することはありません。</li>
   </ul>
-  <p>個人情報の取り扱いは <a href="privacy.html">プライバシーポリシー</a> をご覧ください。</p>
+  <p>本アプリは YouTube API サービスを使っています。本アプリの利用には <a href="https://www.youtube.com/t/terms">YouTube 利用規約</a> が適用されます。詳しくは <a href="terms.html">利用規約</a> と <a href="privacy.html">プライバシーポリシー</a> をご覧ください。</p>
 
   <h2>About this app (English)</h2>
-  <p>kirinuki-upload is a private tool used only by the owner of the YouTube channel "ホロアソビ観察日誌【ホロライブ切り抜き】" (Holo Asobi Observation Diary). It uploads videos that the owner has produced to the owner's own channel, sets their title, description and thumbnail, and schedules their publication, using the YouTube Data API.</p>
+  <p>kirinuki-upload is a private tool used only by the owner of the YouTube channel "ホロアソビ観察日誌【ホロライブ切り抜き】" (Holo Asobi Observation Diary). Using YouTube API Services (YouTube Data API and YouTube Analytics API), it uploads clip videos edited by the owner to the owner's own channel, sets their title, description, tags and thumbnail, schedules their publication, and helps the owner review the channel's own performance. The clips follow the derivative-work and clipping guidelines published by the original creators.</p>
   <ul>
     <li>The only user is the channel owner. It is not offered to the public and has no sign-up.</li>
-    <li>Every video is reviewed by the owner before it is scheduled for publication.</li>
-    <li>It does not read or modify other users' channels, videos or viewer data.</li>
+    <li>It reads analytics for the owner's own channel and checks comments on the owner's own videos for reports of mistakes (for example, wrong names in subtitles).</li>
+    <li>Once a month it counts, via YouTube search, how many clip videos of the clipped creators were published (only the counts are kept).</li>
+    <li>Every video is reviewed by the owner before it is scheduled for publication. It never modifies other users' channels or videos.</li>
   </ul>
-  <p>See the <a href="privacy.html#en">Privacy Policy</a>.</p>
+  <p>This app uses YouTube API Services; use of the app is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See the <a href="terms.html#en">Terms of Use</a> and the <a href="privacy.html#en">Privacy Policy</a>.</p>
 
   <footer>
+    <a href="terms.html">利用規約 / Terms of Use</a> ・ <a href="privacy.html">プライバシーポリシー / Privacy Policy</a><br>
     お問い合わせ / Contact: <a href="mailto:r9ff12@gmail.com">r9ff12@gmail.com</a>
   </footer>
 </main>

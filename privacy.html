@@ -19,77 +19,109 @@
 <body>
 <main>
   <h1>プライバシーポリシー / Privacy Policy</h1>
-  <p class="sub">kirinuki-upload ・ 制定日 / Effective date: 2026-10-11 ・ <a href="index.html">ホーム / Home</a></p>
+  <p class="sub">kirinuki-upload ・ 制定日 / Effective date: 2026-10-11 ・ 改定日 / Last updated: 2026-10-14 ・ <a href="index.html">ホーム / Home</a> ・ <a href="terms.html">利用規約 / Terms</a></p>
 
   <h2>日本語</h2>
 
   <h3>1. このポリシーの対象</h3>
-  <p>このポリシーは、YouTube チャンネル「ホロアソビ観察日誌【ホロライブ切り抜き】」の運営者（以下「運営者」）が使う投稿ツール kirinuki-upload（以下「本アプリ」）に適用されます。本アプリの利用者は運営者本人だけです。</p>
+  <p>このポリシーは、YouTube チャンネル「ホロアソビ観察日誌【ホロライブ切り抜き】」の運営者（以下「運営者」）が使う投稿・管理ツール kirinuki-upload（以下「本アプリ」）に適用されます。本アプリの利用者は運営者本人だけです。</p>
 
   <h3>2. YouTube API サービスの利用</h3>
-  <p>本アプリは YouTube API サービスを使っています。本アプリを使うことで、利用者は <a href="https://www.youtube.com/t/terms">YouTube 利用規約</a> に同意したものとみなされます。Google による情報の取り扱いは <a href="https://policies.google.com/privacy">Google プライバシーポリシー</a> をご覧ください。</p>
+  <p>本アプリは YouTube API サービス（YouTube Data API・YouTube Analytics API）を使っています。本アプリを使うことで、利用者は <a href="https://www.youtube.com/t/terms">YouTube 利用規約</a> に同意したものとみなされます。Google による情報の取り扱いは <a href="https://policies.google.com/privacy">Google プライバシーポリシー</a> をご覧ください。</p>
 
-  <h3>3. 取得する情報</h3>
+  <h3>3. 使う権限と取得する情報</h3>
   <ul>
-    <li>Google アカウントでの認証時に発行されるアクセストークン・リフレッシュトークン（運営者の YouTube チャンネルに動画をアップロードする権限 <code>youtube.upload</code> と、アップロードした動画のサムネイル設定・公開予約に使う権限 <code>youtube</code>）</li>
-    <li>アップロードした動画の ID と URL</li>
+    <li><strong>認証のトークン</strong>：運営者が Google アカウントでログインしたときに発行されるアクセストークン・リフレッシュトークン。使う権限は次のとおりです。
+      <ul>
+        <li><code>youtube.upload</code>・<code>youtube</code>：運営者のチャンネルへの動画のアップロード、タイトル・説明文・タグ・サムネイルの設定、公開予約、再生リストへの追加</li>
+        <li><code>youtube.readonly</code>：運営者のチャンネルの動画の一覧と再生数などの統計、運営者の動画に付いたコメント、YouTube の検索結果を読む</li>
+        <li><code>yt-analytics.readonly</code>：運営者のチャンネルの視聴時間・平均視聴時間・平均視聴率・インプレッションのクリック率・登録者の増減を読む</li>
+        <li><code>drive.file</code>：公開前の確認用に、本アプリが作った動画とサムネイルを運営者の Google ドライブに置く（本アプリが作ったファイルだけ。運営者のほかのファイルは見えません）</li>
+      </ul>
+    </li>
+    <li><strong>運営者のチャンネルの情報</strong>：アップロードした動画の ID・URL・公開日時、再生数・高評価数・コメント数、上の Analytics の数字。</li>
+    <li><strong>運営者の動画に付いたコメント</strong>：字幕や名前のまちがいを指摘するコメントを見つけるために、新しいコメントの本文を読みます。</li>
+    <li><strong>YouTube の検索結果</strong>：月に1回、切り抜いている配信者の名前と「切り抜き」で検索し、直近30日の切り抜き動画の数・チャンネルの数・再生数の中央値を数えます。<strong>保存するのは数えた結果だけ</strong>で、ほかの人の動画のタイトルやチャンネル名、ID は保存しません。</li>
   </ul>
-  <p>視聴者・ほかのユーザーの情報、チャンネルの登録者情報、閲覧履歴などは取得しません。</p>
+  <p>視聴者の個人情報（名前・メールアドレス・閲覧履歴など）、チャンネル登録者の一覧は取得しません。</p>
 
   <h3>4. 情報の使い方</h3>
-  <p>取得した情報は、運営者が作った動画を運営者自身のチャンネルにアップロードし、タイトル・説明文・サムネイルを設定し、公開日時を予約するためだけに使います。広告・分析・第三者への提供には使いません。</p>
-
-  <h3>5. 保存と共有</h3>
   <ul>
-    <li>トークンは運営者のパソコンの中にだけ保存します。外部のサーバーには送りません（Google の API への送信を除く）。</li>
-    <li>アップロードした動画の ID と URL は、運営者が管理する Google スプレッドシートに記録します。</li>
-    <li>取得した情報を第三者に販売・提供・共有することはありません。</li>
-    <li>本アプリは Cookie を使いません。利用者の端末に情報を保存したり、端末から情報を読み取ったりもしません（上記のトークンの保存を除く）。</li>
+    <li>運営者が編集した動画を運営者自身のチャンネルにアップロードし、公開を予約するため。</li>
+    <li>運営者のチャンネルの成績（どの動画が見られているか）を運営者が確かめ、動画づくりを改善するため。</li>
+    <li>コメントで指摘された字幕・名前のまちがいを運営者が見つけて直すため。</li>
+  </ul>
+  <p>広告のための利用、第三者への販売・提供はしません。</p>
+
+  <h3>5. 保存・共有と保存期間</h3>
+  <ul>
+    <li>トークンは運営者のパソコンの中にだけ保存します。</li>
+    <li>動画の ID・URL・公開日時と、運営者のチャンネルの数字は、運営者が管理する Google スプレッドシートに記録します（運営者のチャンネルの統計として、運営者の同意のもとで保存します）。</li>
+    <li>検索結果から数えた数（独自に計算した値）は、同じスプレッドシートに記録します。</li>
+    <li><strong>コメントの本文</strong>は、まちがいの指摘かどうかを判定するために、Anthropic 社の AI（Claude）に送ります。指摘と判定したコメントの本文は運営者のパソコンに保存し、<strong>30日以内に削除</strong>します（指摘の数と内容の要約だけを残します）。指摘でなかったコメントの本文は保存しません。</li>
+    <li>上のほか、YouTube API から取得した情報は、必要がなくなった時点、遅くとも30日以内に削除または更新します。</li>
+    <li>本アプリはウェブサイトではないため、Cookie を使いません。</li>
   </ul>
 
   <h3>6. 削除と権限の取り消し</h3>
-  <p>本アプリへのアクセス権は、いつでも <a href="https://security.google.com/settings/security/permissions">Google アカウントのセキュリティ設定（サードパーティ アクセス）</a> から取り消せます。取り消した場合、または利用をやめた場合、運営者は保存しているトークンを7日以内に削除します。API から取得した情報は、必要がなくなった時点、遅くとも30日以内に削除または更新します。</p>
+  <p>本アプリへのアクセス権は、いつでも <a href="https://security.google.com/settings/security/permissions">Google アカウントのセキュリティ設定（サードパーティ アクセス）</a> から取り消せます。取り消した場合、または利用をやめた場合、運営者は保存しているトークンを7日以内に、YouTube API から取得して保存している情報を30日以内に削除します。</p>
 
   <h3>7. お問い合わせ</h3>
   <p><a href="mailto:r9ff12@gmail.com">r9ff12@gmail.com</a></p>
 
   <h3>8. 変更</h3>
-  <p>このポリシーを変更するときは、このページを更新し、制定日を書きかえます。</p>
+  <p>このポリシーを変更するときは、このページを更新し、改定日を書きかえます。</p>
 
   <h2 id="en">English</h2>
 
   <h3>1. Scope</h3>
-  <p>This policy applies to kirinuki-upload (the "App"), a private upload tool used by the owner (the "Owner") of the YouTube channel "ホロアソビ観察日誌【ホロライブ切り抜き】". The Owner is the App's only user.</p>
+  <p>This policy applies to kirinuki-upload (the "App"), a private upload and management tool used by the owner (the "Owner") of the YouTube channel "ホロアソビ観察日誌【ホロライブ切り抜き】". The Owner is the App's only user.</p>
 
   <h3>2. Use of YouTube API Services</h3>
-  <p>The App uses YouTube API Services. By using the App, users agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. For how Google handles information, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <p>The App uses YouTube API Services (YouTube Data API and YouTube Analytics API). By using the App, users agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. For how Google handles information, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-  <h3>3. Information we access</h3>
+  <h3>3. Permissions and information we access</h3>
   <ul>
-    <li>OAuth access and refresh tokens issued when the Owner signs in with Google, granting permission to upload videos to the Owner's own channel (<code>youtube.upload</code>), and to set thumbnails and schedule publication of the uploaded videos (<code>youtube</code>).</li>
-    <li>The IDs and URLs of the videos the App uploads.</li>
+    <li><strong>OAuth tokens</strong> issued when the Owner signs in with Google, with these scopes:
+      <ul>
+        <li><code>youtube.upload</code> and <code>youtube</code>: upload videos to the Owner's own channel, set title, description, tags and thumbnail, schedule publication, and add videos to playlists.</li>
+        <li><code>youtube.readonly</code>: read the list and statistics of the Owner's videos, comments on the Owner's videos, and YouTube search results.</li>
+        <li><code>yt-analytics.readonly</code>: read watch time, average view duration, average percentage viewed, impressions click-through rate and subscriber changes for the Owner's channel.</li>
+        <li><code>drive.file</code>: place videos and thumbnails created by the App in the Owner's Google Drive for review before publication (only files created by the App).</li>
+      </ul>
+    </li>
+    <li><strong>Data about the Owner's channel</strong>: IDs, URLs and publish times of uploaded videos; view, like and comment counts; and the Analytics metrics above.</li>
+    <li><strong>Comments on the Owner's videos</strong>: the text of new comments is read to find reports of mistakes (for example, wrong names in subtitles).</li>
+    <li><strong>YouTube search results</strong>: once a month, the App searches for the clipped creators' names with "切り抜き" (clip) and counts the clip videos, channels and median views in the last 30 days. <strong>Only these counts are stored</strong>; titles, channel names and IDs of other users' videos are not stored.</li>
   </ul>
-  <p>The App does not access data about viewers, other users, subscribers, or watch history.</p>
+  <p>The App does not access viewers' personal information (names, email addresses, watch history) or subscriber lists.</p>
 
   <h3>4. How we use information</h3>
-  <p>The information is used only to upload videos produced by the Owner to the Owner's own channel, set their title, description and thumbnail, and schedule their publication. It is not used for advertising or analytics and is not provided to third parties.</p>
-
-  <h3>5. Storage and sharing</h3>
   <ul>
-    <li>Tokens are stored only on the Owner's computer and are not sent to any server other than Google's APIs.</li>
-    <li>Uploaded video IDs and URLs are recorded in a Google Sheets spreadsheet managed by the Owner.</li>
-    <li>We do not sell, share, or disclose any information to third parties.</li>
-    <li>The App does not use cookies, and does not store or read information on users' devices (other than storing the tokens above).</li>
+    <li>To upload videos edited by the Owner to the Owner's own channel and schedule their publication.</li>
+    <li>To let the Owner review the performance of the Owner's own channel and improve the videos.</li>
+    <li>To help the Owner find and fix mistakes reported in comments.</li>
+  </ul>
+  <p>Information is not used for advertising and is not sold or provided to third parties.</p>
+
+  <h3>5. Storage, sharing and retention</h3>
+  <ul>
+    <li>Tokens are stored only on the Owner's computer.</li>
+    <li>Video IDs, URLs and publish times, and the Owner's channel metrics, are recorded in a Google Sheets spreadsheet managed by the Owner (stored as the Owner's own channel statistics, with the Owner's consent).</li>
+    <li>Counts calculated from search results (independently calculated metrics) are recorded in the same spreadsheet.</li>
+    <li><strong>Comment text</strong> is sent to Anthropic's AI (Claude) to judge whether it reports a mistake. The text of comments judged to report a mistake is stored on the Owner's computer and <strong>deleted within 30 days</strong> (only the count and a short summary are kept). The text of other comments is not stored.</li>
+    <li>Any other data obtained from YouTube API Services is deleted or refreshed when no longer needed, and in any case within 30 days.</li>
+    <li>The App is not a website and does not use cookies.</li>
   </ul>
 
   <h3>6. Deletion and revoking access</h3>
-  <p>Access can be revoked at any time via the <a href="https://security.google.com/settings/security/permissions">Google security settings page (third-party access)</a>. When access is revoked or the App is no longer used, the Owner deletes the stored tokens within 7 days. Data obtained from the API is deleted or refreshed when no longer needed, and in any case within 30 days.</p>
+  <p>Access can be revoked at any time via the <a href="https://security.google.com/settings/security/permissions">Google security settings page (third-party access)</a>. When access is revoked or the App is no longer used, the Owner deletes the stored tokens within 7 days and the data obtained from YouTube API Services within 30 days.</p>
 
   <h3>7. Contact</h3>
   <p><a href="mailto:r9ff12@gmail.com">r9ff12@gmail.com</a></p>
 
   <h3>8. Changes</h3>
-  <p>If this policy changes, this page will be updated together with the effective date.</p>
+  <p>If this policy changes, this page will be updated together with the last-updated date.</p>
 </main>
 </body>
 </html>
